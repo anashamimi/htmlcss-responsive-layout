@@ -84,7 +84,8 @@ main{
 }
 
 .card .image{
-    max-width: 100%;
+    max-width: 75%;
+    margin: 25px 0 -25px;
 }
 
 .card:first-child p{
@@ -93,11 +94,31 @@ main{
 
 .card p{
     color: var(--p-card);
+    padding: 20px 0;
 }
 
 .button-blue{
     background-color: var(--secondary-color);
-    border-radius: 25%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: fit-content;  
+    margin: 0 auto; 
+    color: var(--light-color);
+}
+
+.button-blue i{
+    padding-right: 10px;
+}
+
+.fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn{
+    font-size: 5rem;
+    color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.card h3{
+    color: var(--secondary-color);
 }
 
 /* Footer */
