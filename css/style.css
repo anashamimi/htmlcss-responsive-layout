@@ -42,15 +42,21 @@ section{
     text-align: center;
 }
 
-
-.btn{
-    display: inline-block;
-    padding: 6px 12px;
-    border-radius: 10px;
-    color: var(--light-color);
-    background-color: var(--primary-color);
+img{
+    max-width: 100%;
 }
 
+p{
+    line-height: 1.7rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
 /* header */
 header{
     background-color: var(--secondary-color);
@@ -101,8 +107,13 @@ main{
     margin: 25px 0 -25px;
 }
 
+
 #intro .card:first-child p{
     text-align: left;
+}
+
+#intro .card:first-child img{
+    display: block;
 }
 
 #intro .card p{
@@ -140,9 +151,6 @@ main{
 }
 
 /* Planning */
-#planning img{
-    width: 100%;
-}
 
 #planning{
     color: var(--light-color);
@@ -207,12 +215,33 @@ main{
 }
 
 
-/* Featurs */
+/* Features */
 
-.button-featurs{
-    background-color: var(--primary-color);
+#features h2{
+    text-align: center;
     color: var(--light-color);
 }
+
+#features .card{
+    background-color: var(--light-color);
+}
+
+#features .card h2, h3{
+    color: var(--primary-color);
+    text-align: left;
+}
+
+#features h3{
+    padding: 1rem 0;
+}
+
+.button-features{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    margin: 20px 0;
+    padding: 0.5rem 3rem;
+}
+
 
 /* Footer */
 footer{
@@ -242,4 +271,43 @@ footer{
     #intro .card:first-child{
         width: calc((100% / 3 * 2 ) - 10px);
     }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .container{
+        max-width: 940px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    header nav ul{
+        display: flex;
+    }
+
+    .inner-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-left{
+        width: calc(50% - 10px);
+    }
+
+    #testimonials .user-image{
+        width: calc(30% - 10px);
+    }
+
+    #testimonials .card-text{
+        width: calc(70% - 10px);
+    }
+
+    #planning .col{
+        width: calc;
+    }
+
 }
