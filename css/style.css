@@ -47,7 +47,7 @@ img{
 }
 
 p{
-    line-height: 1.7rem;
+    line-height: 2rem;
 }
 
 h3{
@@ -196,7 +196,7 @@ main{
     color: var(--light-color);
 }
 
-#testimonials .user-img{
+.user-img{
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -226,13 +226,18 @@ main{
     background-color: var(--light-color);
 }
 
-#features .card h2, h3{
+#features .card h2, #features .card h3{
     color: var(--primary-color);
     text-align: left;
 }
 
 #features h3{
     padding: 1rem 0;
+}
+
+#features p{
+    color: var(--p-card);
+    font-weight: 400;
 }
 
 .button-features{
@@ -242,13 +247,93 @@ main{
     padding: 0.5rem 3rem;
 }
 
+/* About Us */
+
+#about-us h2{
+    color: var(--primary-color);
+}
+
+#about-us p{
+    padding-top: 3rem;
+}
+
+
+#about-us .user-img{
+    margin: 3rem 0 2rem;
+}
+
+.img-icon{
+    position: relative;
+    display: inline-block;
+}
+
+.virgolette{
+    font-size: 13rem;
+    color: var(--primary-color);
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+
+}
+
+#about-us .button{
+    background-color: var(--primary-color);
+    color: white;
+    margin: 2rem 0 4rem;
+}
+
+#about-us .button span{
+    padding-left: 5px;
+}
+
+/* Call to action */
+#call-to-action{
+    color: var(--light-color);
+    text-align: center;
+}
+
+#call-to-action h3{
+    padding: 2rem 0 1rem;
+    font-weight: 400;
+}
+
+#call-to-action p{
+    padding-bottom: 2rem;
+}
+
+.free{
+    color: var(--contrast-color);
+    padding: 2rem 0;
+    font-size: 4rem;
+}
+
+#call-to-action .button{
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
 
 /* Footer */
 footer{
     background-color: var(--dark-color);
     color: var(--light-color);
+    font-size: 1rem;
+    text-align: center;
 }
 
+footer .underline{
+    color: var(--primary-color);
+}
+
+footer p{
+    padding-top: 3rem;
+}
 
 /* responsive */
 
