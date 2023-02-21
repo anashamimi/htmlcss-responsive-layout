@@ -28,14 +28,27 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 15px;
+}
+
+section{
+    scroll-margin-top: 80px;
 }
 
 /* utility */
 .text-center{
     text-align: center;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
 }
 
 /* header */
@@ -88,22 +101,27 @@ main{
     margin: 25px 0 -25px;
 }
 
-.card:first-child p{
+#intro .card:first-child p{
     text-align: left;
 }
 
-.card p{
+#intro .card p{
     color: var(--p-card);
     padding: 20px 0;
 }
 
-.button-blue{
-    background-color: var(--secondary-color);
+.button{
+    
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
     width: fit-content;  
     margin: 0 auto; 
+}
+    
+
+.blue{
+    background-color: var(--secondary-color);
     color: var(--light-color);
 }
 
@@ -117,8 +135,83 @@ main{
     padding: 20px 0;
 }
 
-.card h3{
+#intro .card h3{
     color: var(--secondary-color);
+}
+
+/* Planning */
+#planning img{
+    width: 100%;
+}
+
+#planning{
+    color: var(--light-color);
+}
+
+#planning .card{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    text-align: center;
+    border-radius: 50px;
+}
+
+#planning .card h3{
+    padding: 20px 0;
+}
+
+#planning .card p{
+    text-decoration: dotted;
+}
+
+
+.arrow{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: var(--primary-color);
+   font-size: 25px;
+   text-align: center;
+   padding-top: 7px;
+   margin: 2rem auto;
+   cursor: pointer;
+}
+
+/* Testimonial */
+
+#testimonials h2{
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+#testimonials .card{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+#testimonials .user-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#testimonials .user-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#testimonials .icon{
+    font-size: 50px;
+}
+
+
+/* Featurs */
+
+.button-featurs{
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 /* Footer */
@@ -131,6 +224,11 @@ footer{
 /* responsive */
 
 @media screen and (min-width: 768px) {
+
+    .container{
+        max-width: 750px;
+    }
+
     .d-flex{
         display: flex;
         flex-flow: row wrap;
