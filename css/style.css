@@ -356,6 +356,10 @@ footer p{
     #intro .card:first-child{
         width: calc((100% / 3 * 2 ) - 10px);
     }
+
+    #features .card{
+        width: calc((100% / 2) - 10px);
+    }
 }
 
 @media screen and (min-width: 992px) {
