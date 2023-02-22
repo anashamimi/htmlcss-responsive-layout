@@ -78,6 +78,31 @@ ul{
     list-style: none;
 }
 
+nav li a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: var(--light-color);
+}
+
+nav .button{
+    background-color: var(--light-color);
+    color: #000000;
+    padding: 7px 10px;
+    transition: background-color 1s;
+}
+
+nav .button:hover{
+    text-decoration: none;
+    background-color: var(--bg-card);
+}
+
 header nav ul{
     display: none;
 }
@@ -129,11 +154,16 @@ main{
     width: fit-content;  
     margin: 0 auto; 
 }
-    
+
+#intro a{
+    text-decoration: none;
+    padding-left: 5px;
+}
 
 .blue{
     background-color: var(--secondary-color);
     color: var(--light-color);
+    padding: 10px 50px;
 }
 
 .button-blue i{
@@ -224,6 +254,7 @@ main{
 #features h2{
     text-align: center;
     color: var(--light-color);
+    font-size: 5rem;
 }
 
 #features .card{
@@ -386,6 +417,10 @@ footer p{
     .virgolette{
         right: -100px;
     }
+
+    footer .container{
+        max-width: 500px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -426,8 +461,24 @@ footer p{
         width: calc(70% - 10px);
     }
 
-    #planning .col{
-        width: calc;
+    #planning .inner-flex{
+        align-items: last baseline;
+        gap: 30px;
     }
 
+    #planning .col{
+        width: calc((100% / 2) - 30px);
+    }
+
+    #features .card{
+        width: calc((100% / 3) - 20px);
+    }
+
+    #intro .card-left{
+        width: calc((100% / 2) - 10px);
+    }
+
+    #intro img{
+        margin: 0 auto -167px;
+    }
 }
